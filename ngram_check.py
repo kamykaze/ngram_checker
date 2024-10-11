@@ -46,7 +46,7 @@ if __name__ == "__main__":
     parser.add_argument("file_path", help="Path to the text file")
     parser.add_argument("--ignore", nargs='*', default=[], help="List of characters to ignore")
     parser.add_argument("--length", default=2, help="Length of n-grams to calculate. Default is 2.")
-    parser.add_argument("--top", default=20, help="Only show top N results. default is 50.")
+    parser.add_argument("--top", default=0, help="Only show top N results.")
     parser.add_argument("--includeany", nargs='*', default=[], help="List of characters the n-gram has to include (any of them)")
     parser.add_argument("--includeall", nargs='*', default=[], help="List of characters the n-gram has to include (all of them)")
     args = parser.parse_args()
